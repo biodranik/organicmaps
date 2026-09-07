@@ -69,6 +69,13 @@ jobs:
             cc: cl.exe
             cxx: cl.exe
             cmake-preset-suffix: -windows
+
+          - os: windows-2025-vs2026
+            cc: cl.exe
+            cxx: cl.exe
+            cmake-preset-suffix: -windows
+            unity: OFF
+            run-tests: OFF
         exclude:
           - environment: { unity: OFF }
             cmake-build-type: Release
